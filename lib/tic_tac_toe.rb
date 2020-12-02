@@ -63,7 +63,7 @@ def input_to_index(user_input)
 end
 
 def move(board, index, current_player)
-  board[index] = current_player(board)
+  board[index] = current_player
 end
 
 # Define your WIN_COMBINATIONS constant
