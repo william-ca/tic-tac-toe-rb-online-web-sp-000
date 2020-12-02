@@ -31,7 +31,7 @@ def position_taken?(board, index)
 end
 
 def turn_count(board)
-  counter = 0
+  counter = 1
   board.each do |spaces|
     if spaces == "X" || spaces == "O"
       counter += 1
