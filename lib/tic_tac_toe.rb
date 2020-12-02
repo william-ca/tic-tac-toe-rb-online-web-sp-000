@@ -6,6 +6,10 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def current_player(board)
+   turn_count(board) % 2 == 0 ? "X" : "O"
+end
+
 def play(board)
    until over?(board)
       turn(board)
@@ -30,10 +34,6 @@ def turn_count(board)
       end
     end
     counter
-end
-
-def current_player(board)
-   turn_count(board) % 2 == 0 ? "X" : "O"
 end
 
 def valid_move?(board, index)
